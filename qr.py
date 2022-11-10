@@ -310,7 +310,7 @@ class PriorityQueue(BaseQueue):
     
     def push(self, value, score):
         '''Add an element with a given score'''
-        return self.redis.zadd(self.key, self._pack(value), score)
+        raise ValueError
 
 class CappedCollection(BaseQueue):
     """
